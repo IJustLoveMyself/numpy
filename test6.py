@@ -14,6 +14,7 @@ print b
 #  [0 1 2]]
 
 # numpy.expand_dims(arr, axis)
+# 函数通过在指定位置插入新的轴来扩展数组形状
 # arr：输入数组
 # axis：新轴插入的位置
 
@@ -68,6 +69,7 @@ print b[1,0] #2 删除列a中的0轴
 
 # 数组的连接
 # numpy.concatenate((a1, a2, ...), axis)
+# 此函数用于沿指定轴连接相同形状的两个或多个数组
 # a1, a2, ...：相同类型的数组序列,形状相同（轴长相同）
 # axis：沿着它连接数组的轴，默认为 0
 
@@ -85,6 +87,7 @@ print c
 #  [2 3 7 8]]
 
 # numpy.stack(arrays, axis)
+# 此函数沿新轴连接数组序列
 # arrays：相同形状的数组序列
 # axis：返回数组中的轴，输入数组沿着它来堆叠
 
@@ -128,6 +131,7 @@ print c
 #  [7 8]]
 
 # numpy.split(ary, indices_or_sections, axis)
+# 该函数沿特定的轴将数组分割为子数组
 # ary:输入的数组
 # indices_or_sections：要平均分成几份
 # axis：要沿哪个轴分割，默认是0
@@ -196,6 +200,7 @@ print d
 #  [2 3]]
 
 # numpy.append(arr, values, axis)
+# 此函数在输入数组的末尾添加值
 # arr：输入数组
 # values：要向arr添加的值，比如和arr形状相同(除了要添加的轴)
 # axis：沿着它完成操作的轴。如果没有提供，arr和values两个参数都会被展开成一维数组

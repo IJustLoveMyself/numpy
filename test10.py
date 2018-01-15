@@ -20,7 +20,7 @@ print np.sort(a, order =  'name')
 # [('amar', 27) ('anil', 25) ('raju', 21) ('ravi', 17)]
 
 # numpy.argsort()
-# 函数对输入数组沿给定轴执行排序，返回反需后原数组的索引
+# 函数对输入数组沿给定轴执行排序，返回排序后原数组的索引
 a = np.array([4,  1,  3])
 print np.argsort(a) #[1 2 0]
 a = np.array([[[14,5,2],[7,13,4]],[[11,2,9],[1,8,12]]])
@@ -79,7 +79,7 @@ print np.where(a == 0) #(array([0]), array([0]), array([0]))
 print np.where(a>10) #(array([0, 1]), array([1, 1]), array([1, 2]))
 
 # numpy.extract()
-# 函数返回满足任何条件的元素
+# 函数返回任何满足条件的元素
 a = np.array([[[0,5,2],[7,13,1]],[[1,2,9],[1,1,15]]])
 condtion = np.mod(a,2) == 0
 print condtion #定义条件，condtion只是一个普通的变量，可以随便定义。
