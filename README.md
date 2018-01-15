@@ -194,5 +194,3 @@ numpy.linalg.solve 求解线性矩阵方程
 
 numpy.linalg.inv 寻找矩阵的乘法逆矩阵
 
-
-
